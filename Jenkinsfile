@@ -13,13 +13,6 @@ node {
         app = docker.build("putturaj/0c325ad65a19")
     }
 
-    stage('Test image') {
-        
-        app.inside {
-            echo "Tests passed"
-        }
-    }
-
     stage('Push image') {
         /* 
 			You would need to first register with DockerHub before you can push images to your account
