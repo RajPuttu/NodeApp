@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("putturaj/0c325ad65a19")
+        app = docker.build("putturaj/get-me")
     }
 
     stage('Push image') {
